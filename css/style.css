@@ -1,0 +1,944 @@
+/* font-family: 'Saira', sans-serif; */
+/*  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    background-color: #29a6dc;
+    overflow: hidden;
+
+}
+
+header img {
+    position: absolute;
+    height: 50%;
+    bottom: 0;
+    right: 0;
+}
+
+header div.welcome {
+    z-index: 1;
+    position: absolute;
+    top: 8%;
+    left: 5%;
+    right: 5%;
+    text-align: center;
+    font-family: serif;
+    font-family: "Saira Condensed", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    text-transform: uppercase;
+}
+
+header h1 {
+    margin-top: 13px;
+    font-size: 20px;
+}
+
+header h2 {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+header button {
+    font-family: "Saira"; 
+    line-height: 32px;
+    padding: 0 20px;
+    text-transform: uppercase;
+    color: white;
+    background-color: transparent;
+    font-size: 12px;
+    border: 2px solid white;
+}
+
+@media (orientation: landscape) {
+    header {
+        height: 100vh;
+    }
+    header img {
+        position: absolute;
+        height: 80%;
+        bottom: 0;
+        right: -5%;
+    }
+    header div.welcome {
+        top: 15%;
+        left: 5%;
+        right: 48%; 
+    }
+    header button {
+        margin-top: 32px;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 360px) {
+    header h1 {
+        font-size: 24px;
+    }
+    header h2 {
+        font-size: 24px;
+    }
+    header button {
+        line-height: 40px;
+        font-size: 15px;
+        margin-top: 33px;
+    }
+    header img {
+        right: -10%;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 393px) {
+    header p {
+        margin-top: 20px;
+    }
+    header h1 {
+        margin-top: 25px;
+        font-size: 29px;
+    }
+    header h2 {
+        font-size: 29px;
+        margin-top: 10px;
+    }
+    header button {
+        line-height: 50px;
+        font-size: 19px;
+        margin-top: 48px;
+    }
+
+    header img {
+        right: -25%;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 410px) {
+    header h1 {
+        font-size: 29px;
+    }
+    header h2 {
+        font-size: 29px;
+    }
+    header button {
+        line-height: 40px;
+        font-size: 25px;
+        margin-top: 47px;
+    }
+
+    header img {
+        position: absolute;
+        height: 50%;
+        bottom: 0;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 768px) {
+    header p {
+        font-size: 60px;
+    }
+    header h1 {
+        font-size: 40px;
+    }
+    header h2 {
+        font-size: 40px;
+    }
+    header button {
+        line-height: 60px;
+        font-size: 28px;
+        margin-top: 57px;
+    }
+
+    header img {
+        position: absolute;
+        height: 50%;
+        bottom: -25px;
+        right: 4%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 640px) {
+    header h1 {
+        font-size: 26px;
+    }
+    header h2 {
+        font-size: 23px;
+    }
+    header button {
+        font-size: 16px;
+        line-height: 40px;
+    }
+}
+
+section {
+    min-height: 100vh;
+}
+
+@media (orientation: landscape) and (min-width: 768px) {
+    header h1 {
+        font-size: 35px;
+        margin-left: 10px;
+    }
+    header h2 {
+        font-size: 35px;
+        margin-left: 10px;
+
+    }
+    header button {
+        font-size: 25px;
+        line-height: 60px;
+        margin-left: 10px;
+
+    }
+    header img {
+        right: -5%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+    div.welcome {
+        left: 3%;
+    }
+    header p {
+        font-size: 56px;
+    }
+    header h1 {
+        margin-top: 40px;
+        font-size: 34px;
+    }
+    header h2 {
+        font-size: 35px;
+    }
+
+    header img {
+        right: -13%;
+    }
+    header button {
+        margin-top: 100px;
+        font-size: 28px;
+        line-height: 70px;
+    }
+    header img {
+        right: -22%;
+        height: 90%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1280px) {
+    div.welcome {
+        left: 3%;
+        text-align-last: left;
+    }
+    header p {
+        font-size: 86px;
+    }
+    header h1 {
+        margin-top: 10px;
+        font-size: 44px;
+    }
+    header h2 {
+        font-size: 45px;
+    }
+
+    header img {
+        right: -13%;
+    }
+    header button {
+        margin-top: 80px;
+        font-size: 35px;
+        line-height: 80px;
+        padding: 0 40px;
+        border-width: 4px;
+    }
+    header img {
+        right: -12%;
+        height: 90%;
+    }
+}
+@media (orientation: landscape) and (min-width: 1380px) {
+    div.welcome {
+        margin-left: 50px;
+        left: 3%;
+        text-align-last: left;
+    }
+    header p {
+        font-size: 86px;
+    }
+    header h1 {
+        margin-top: 10px;
+        font-size: 44px;
+    }
+    header h2 {
+        font-size: 45px;
+    }
+    header button {
+        margin-top: 80px;
+        font-size: 35px;
+        line-height: 80px;
+        padding: 0 40px;
+        border-width: 4px;
+    }
+    header img {
+        right: 2%;
+        height: 95%;
+        bottom: -4%;
+    }
+}
+
+@media (min-width: 1024px) {
+    header button:hover {
+        background-color: #fff;
+        color: #111;
+        cursor: pointer;
+        transition: .4s;
+    }
+}
+
+section {
+    min-height: 30vh;
+}
+
+
+/* _---------------------------------------- */
+/* SEKCJA 1 NASZE CECHY */
+/* _______________________________________ */
+
+
+
+.features {
+    margin-top: 50px;
+    padding: 3%;
+    text-align: center;
+}
+
+.features h1 {
+    font-family: "Saira Condensed";
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.features h2 {
+    font-family: "Saira Condensed";
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: -15px;
+}
+
+.features p {
+    font-family: "Saira";
+    font-size: 12px;
+    font-weight: 300;
+    margin: 7px 0;
+
+}
+
+.features img {
+    width: 90%;
+    margin: 20px 0;
+    max-width: 375px;
+}
+
+@media (min-width: 360px) and (orientation: portrait) {
+    .features h1 {
+        font-size: 30px;
+    }
+    .features h2 {
+        font-size: 23px;
+    }
+    .features p {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 360px) and (orientation: portrait) {
+    .features h1 {
+        font-size: 30px;
+    }
+    .features h2 {
+        font-size: 23px;
+    }
+    .features p {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) and (orientation: portrait) {
+    .features h1 {
+        font-size: 38px;
+    }
+    .features h2 {
+        font-size: 30px;
+    }
+    .features p {
+        font-size: 19px;
+    }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+    .feature {
+        float: left;
+        width: 33%;
+        padding: 1%;
+        margin-top: 50px;
+    }
+    .features h1 {
+        font-size: 38px;
+    }
+    .features h2 {
+        font-size: 24px;
+    }
+    .features p {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 1600px) and (orientation: landscape) {
+    .feature {
+        max-width: 1600px;
+        margin: 50px auto 0;
+    }
+    .features h1 {
+        font-size: 56px;
+    }
+    .features h2 {
+        font-size: 36px;
+    }
+    .features p {
+        font-size: 21px;
+        margin-top: 10px;
+    }
+}
+
+
+/* _---------------------------------------- */
+/* SEKCJA 2 PORTFOLIO */
+/* _______________________________________ */
+
+
+.portfolio {
+    background-color: black;
+    margin-top: 50px;
+    padding: 10px 0 30px;
+}
+
+.portfolio .project {
+    margin: 30px 0;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.portfolio h1 {
+    font-family:"Saira Condensed";
+    font-size: 28px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+.portfolio .web img {
+    width: 100%;
+}
+
+.portfolio .about {
+    color: white;
+    font-family: "Saira";
+    font-weight: normal;
+    padding: 15px 20px 20px 20px;
+    padding-left: 0;
+
+}
+
+.portfolio .about h2 {
+    font-size: 18px;
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
+    padding-bottom: 6px;
+    text-indent: 20px;
+}
+
+.portfolio .about p {
+    font-size: 12px;
+    padding-left: 20px;
+}
+.portfolio .project:nth-of-type(odd) {
+    background-color: #ff4f2c;
+}
+
+.portfolio .project:nth-of-type(even) {
+    background-color: #29a6dc;
+}
+
+
+@media (orientation:landscape) {
+    .web,
+    .about {
+        width: 50%;
+        float: left;
+    }
+
+    .web img {
+        display: block;
+    }
+   
+    .portfolio .project:nth-of-type(even).web {
+        float: right;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .portfolio h1 {
+        font-size: 40px;
+    }
+    .portfolio .about h2 {
+        font-size: 28px;
+        border-bottom: 2px solid white;
+        margin-bottom: 12px;
+        padding-bottom: 6px;
+        text-indent: 40px;
+    }
+    
+    .portfolio .about p {
+        font-size: 20px;
+        padding-left: 40px;
+    }
+    
+}
+
+
+@media (min-width: 1290px) {
+    .portfolio {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .portfolio h1 {
+        font-size: 60px;
+        
+    }
+    .portfolio .about h2 {
+        font-size: 35px;
+        border-bottom: 2px solid white;
+        margin-bottom: 12px;
+        padding-bottom: 6px;
+        text-indent: 40px;
+    }
+    
+    .portfolio .about p {
+        font-size: 28px;
+        padding-left: 40px;
+        line-height: 180%;
+    }
+
+    .portfolio .project {
+        margin: 0 auto;
+        margin: 40px auto;
+
+    }
+    
+}
+
+
+
+/* SEKCJA 3 MOTTO  */
+
+.slogan {
+    text-align: center;
+    background-image: url(../images/motto.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+.slogan h1 {
+    font-family:"Saira Condensed";
+    margin-top: 50px;
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.slogan p{
+    font-family: "Saira";
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.slogan p.author{
+    margin-top: 25px;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.slogan .bg {
+    padding: 30px 20px;
+    background-color: rgba(0, 63, 114, 0.5);
+}
+
+@media (orientation: landscape) {
+    .slogan p {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (min-width: 768px) {
+    .slogan h1 {
+        font-size: 50px;
+        margin-bottom: 35px;
+    }
+    
+    .slogan p{
+        font-size: 28px;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .slogan p.author{
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .slogan h1 {
+        font-size: 63px;
+        margin-bottom: 35px;
+    }
+    
+    .slogan p{
+        font-size: 33px;
+        width: 50%;
+    }
+    
+    .slogan p.author{
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1290px) {
+
+    .slogan h1 {
+        font-size: 73px;
+        margin-bottom: 65px;
+    }
+    
+    .slogan p{
+        font-size: 38px;
+        width: 50%;
+    }
+    
+    .slogan p.author{
+        font-size: 15px;
+        text-align: center;
+    }
+    .slogan .bg{
+        height: 90vh;
+        padding-top: 40px;
+    }
+}
+
+
+
+
+
+/* SEKCJA HOBBY  */
+
+
+.hobby {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.hobby .item {
+    height: 30vh;
+    background-size: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.hobby .item:nth-of-type(1) {
+    background-image: url("https://podrozetak.pl/wp-content/uploads/sites/4/2017/11/tanie-podr%C3%B3%C5%BCowanie-samolot-800x544.jpg");
+}
+.hobby .item:nth-of-type(2) {
+    background-image: url("https://regiony.rp.pl/wp-content/uploads/2021/06/tatry.jpeg");
+}
+.hobby .item:nth-of-type(3) {
+    background-image: url("https://i.iplsc.com/wybierasz-sie-na-narty-koniecznie-przejrzyj-swoj-sprzet/0006CJA5NYXS9SA2-C122-F4.jpg");
+
+}
+.hobby .item:nth-of-type(4) {
+    background-image: url("../images/hobby3.jpg");
+}
+
+.hobby .item p {
+    display: block;
+    width: 100%;
+    top: 79%;
+    font-family: "saira";
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 6px black;
+    background-color: rgba(0, 0, 0, .5);
+    line-height: 35px;
+    position: absolute;
+}
+
+.hobby h1 {
+    font-family: "Saira Condensed", sans-serif;
+    text-align: center;
+    font-size: 36px;
+    padding: 20px;
+}
+
+@media (min-width:360px) {
+
+    .hobby .item p {
+        top: 75%;
+        font-size: 20px;
+        line-height: 48px;
+    }
+}
+
+@media (min-width:393px) {
+
+    .hobby .item p {
+        top: 82%;
+        font-size: 20px;
+        line-height: 48px;
+    }
+}
+@media (min-width:414px) {
+
+    .hobby .item p {
+        top: 83%;
+        font-size: 20px;
+        line-height: 48px;
+    }
+}
+
+@media (min-width:533px) {
+    .hobby .item {
+        float: left;
+        width: 50%;
+        height: 40vh;
+    }
+    .hobby .item p {
+        top: 75%;
+        line-height: 32px;
+    }
+}
+
+@media (min-width:768px) {
+    .hobby .item p {
+        top: 88%;
+        line-height: 50px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hobby .item p {
+        position: static;
+        padding: 0;
+        line-height: 40vh;
+        opacity: 0;
+        transition: 1s;
+    }
+    .hobby .item:hover p {
+        opacity: 1;
+    }
+
+    .hobby .item {
+        background-size: 100%;
+        transition: 1s;
+    }
+    .hobby .item:hover {
+        background-size: 120%;
+    }
+}
+@media (min-width: 1450px) {
+    .hobby h1 {
+        font-size: 60px;
+    }
+    .hobby .item p {
+        position: static;
+        padding: 0;
+        transition: 1s;
+        font-size: 40px;
+        cursor: default
+    }
+    .hobby .item:hover p {
+        opacity: 1;
+    }
+
+    .hobby .item {
+        background-size: center;
+    }
+    .hobby .item:nth-of-type(3) {
+        background-position: center;
+        transition: 1s;
+    }
+    .hobby .item:hover {
+        background-size: 110%;
+    }
+}
+
+
+
+
+/* SEKCJA 5 KONTAKT  */
+
+
+.contact {
+    background-color: #000;
+    padding: 40px 20px;
+}
+
+.contact h1 {
+    font-family: "Saira Condensed";
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: white;
+    text-align: center;
+}
+
+.contact .wrap {
+    padding-top: 20px;
+    max-width: 1024px;
+    margin: 0 auto; 
+}
+
+.contact input,
+.contact button,
+.contact textarea {
+    width: 100%;
+    margin-bottom: 25px;
+    font-family: "Saira";
+    font-size: 12px;
+    padding: 5px;
+}
+
+.contact input {
+    height: 36px;
+}
+
+.contact textarea {
+    height: 36px;
+}
+
+.contact button {
+    font-size: 14px;
+    line-height: 40px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+
+.contact .socials {
+    padding-top: 20px;
+    font-size: 0;
+}
+
+.contact .social {
+    padding-top: 15px;
+    font-family: "Saira Condensed";
+    color: white;
+}
+
+.contact .social img {
+    float: left;
+}
+
+.contact .social span {
+    line-height: 72px;
+    padding-left: 20px;
+    float: left;
+    font-size: 20px;
+}
+
+@media (min-width: 533px) {
+    .contact .social {
+        display: inline-block;
+        width: 50%;
+    }
+    .contact .social span {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contact form,
+    .contact .socials {
+        float: left;
+        width: 50%;
+        padding: 0 10px;
+    }
+    .contact .social {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .contact .social span {
+        font-size: 14px;
+    }
+    .contact input:nth-of-type(1) {
+        height: 46px;
+        font-size: 24px;
+        margin-bottom: 30px;
+        margin-top: 18px;
+    }
+    .contact input {
+        height: 46px;
+        font-size: 24px;
+    }
+    
+    .contact textarea {
+        height: 180px;
+        font-size: 24px;
+        margin-bottom: 30px;
+        
+    }
+    
+    .contact button {
+        font-size: 24px;
+        line-height: 40px;
+        background-color: black;
+        color: white;
+        border: 2px solid white;
+        margin-bottom: 30px;
+    }
+
+    .contact button:hover {
+        color: black;
+        background-color: #fff;
+    }
+    .contact h1 {
+        font-size: 46px;
+       
+    }
+}
+
+
+
+footer {
+    background-color: #29a6dc;
+    font-family: "Saira";
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
